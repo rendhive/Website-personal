@@ -1,0 +1,38 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+  background: #0F172A;
+}
+
+.hero {
+  padding: 100px 20px;
+  background: linear-gradient(270deg, #F97316, #EC4899, #8B5CF6, #06B6D4);
+  background-size: 400% 400%;
+  color: white;
+  animation: gradientMove 12s ease infinite;
+}
+
+@keyframes gradientMove {
+ 0% { background-position: 0% 50%; }
+ 50% { background-position: 100% 50%; }
+ 100% { background-position: 0% 50%; }
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #4C1D95;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: white;
+}
